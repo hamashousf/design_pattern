@@ -1,0 +1,13 @@
+@startuml 00_00
+abstract class ParentClass{
+    field1
+    {static} field2
+    {abstract} methodA()
+    methodB()
+}
+class ChildClass{
+    methodA()
+    {static} methodC()
+}
+ParentClass <|-- ChildClass
+@enduml
